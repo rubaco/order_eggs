@@ -103,8 +103,7 @@ footer {
 
   .egg-parent {
     flex-flow: column;
-    width: 1000px;
-    color: blue; }
+    width: 1000px; }
 
   .egg-child-content {
     width: 1000px;
