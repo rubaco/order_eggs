@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background-color: grey; }
+  body h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: #ff6a6c; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: red;
+  border-color: black;
+  flex-direction: column;
+  height: 160px;
+  font-family: 'Montserrat', sans-serif; }
+
+img {
+  width: 360px;
+  height: 288px;
+  padding-top: 50px; }
+
+footer {
+  display: flex;
+  background-color: #323332;
+  height: 100px;
+  font-size: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  footer div {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-left: 50px; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+  footer a:hover {
+    color: grey; }
+  footer .social {
+    padding-right: 50px; }
+
+.logo {
+  color: red;
+  padding-left: 60px;
+  font-size: 14px; }
+  .logo h3 {
+    color: #babbba;
+    font-style: italic;
+    font-weight: lighter; }
+
+.egg-parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.egg-child {
+  width: 50%;
+  height: 597px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  color: white; }
+
+/*some example of nesting */
+.egg-child-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 288px;
+  padding: 30px; }
+  .egg-child-content h2 {
+    font-weight: lighter;
+    font-size: 30px; }
+  .egg-child-content h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    width: 2.4rem; }
+  .egg-child-content h4 {
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter; }
+
+/* Example of Media Query - This changes the width of the egg-child when the screen reduces to 1025 */
+@media screen and (max-width: 1000px) and (min-width: 0px) {
+  .egg-child {
+    width: 100%;
+    color: blue; }
+
+  .egg-parent {
+    flex-flow: column;
+    width: 1000px;
+    color: blue; }
+
+  .egg-child-content {
+    width: 1000px;
+    padding: 30px; } }
+/*Example of mixin and function*/
+#boiled {
+  background-color: #ff6a6c; }
+
+#softboiled {
+  background-color: #76df80; }
+
+#sunnyside {
+  background-color: #69cef8; }
+
+#poached {
+  background-color: #c993cf; }
+
+#overeasy {
+  background-color: #1ab4d7; }
+
+#overhard {
+  background-color: #febcb7; }
+
+#scrambled {
+  background-color: #e5d667; }
+
+#omelette {
+  background-color: #619ee4; }
+
+/*# sourceMappingURL=ordereggs.css.map */
